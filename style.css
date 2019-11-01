@@ -1,5 +1,13 @@
-.back {width: 100%; background: #171717; height: 40px;}
+.back {width: 100%; background: #171717; height: 42px;}
 #menu {list-style: none; padding: 0; margin: 0; font-size: 100%; font-family: Georgia;}
-#menu li{float: left; height: 40px; padding: 0; margin: 0; width: 180px; text-align: center; background: #171717; position: relative; padding-top: 12px;}
-#menu li:hover{background: #424242;}
-#menu li a{display: block; width: 180px; height: 40px; color: #fff; text-decoration: none;} 
+#menu li{float: left; height: 30px; padding: 0; margin: 0; width: 180px; text-align: center; background: #171717; position: relative; padding-top: 12px;}
+#menu li:hover{background: #FF0000;}
+#menu li a{display: block; width: 180px; height: 40px; color: #fff; text-decoration: none;}
+#menu li ul{list-style: none; padding: 0; margin: 0; width: 180px; display: none; position: absolute; left: 0; top: 42px;}
+#menu li ul li{float: none; height: 40px; padding-top: 12px; padding-left: 12px; width: 168px; text-align: left; background: #7F7F7F;}
+#menu li:hover ul{display: block;}
+.frame {background: paleturquoise; height: 300px;}
+.head {background: red;}
+body {background: salmon}
+h1 {position: relative; text-align: center;}
+iframe{}
