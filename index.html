@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script type"text/javascript">
+		function setDynCSS(url){
+			if(!arguments.length)
+			{
+				url=(url=document.cookie.match(/\bdsyncss=([^;]*)/))&&url[1];
+				if(!url) return '';
+				}
+				document.getElementById('dyncss').href=url;
+				var d=new Date();
+				d.setFullYear(d.getFullYear()+1);
+				document.cookie=['dyncss=',url,';expires=', d.toGMTString(),';path=/;'].join('');
+				return url;
+			
+		}
+		setDynCSS();
+		</script>
+		<!-- <script>
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("style2");
+       stylesheet.setAttribute('href', url);
+    }
+    </script> -->
 		<link rel="stylesheet" style="text/css" href="css/style.css" />
+		<link rel="stylesheet" id=dyncss href="css/style2.css" />
 		<link href="ip.php" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Образовательный центр</title>
 	</head>
 	<body>
-	<input type=button value="Show Time" onclick="alert(new Date())">
+	<input type=button value="Время" onclick="alert(new Date())">
 	<div class="head">
 		<h1> Образовательный центр иностранных языков </h1>
 	</div>
@@ -42,8 +65,16 @@
 			Ваш браузер не поддерживает плавающие фреймы!
 		</iframe>
 		</div>
+		<div>
+			<input type=button value="Стиль 1" onclick=setDynCSS('css/style.css')>
+			<input type=button value="Стиль 2" onclick=setDynCSS('css/style2.css')>
+			<!-- <span onclick=setDynCSS('css/style.css')>Стиль 1</span>
+			<span onclick=setDynCSS('css/style2.css')>Стиль 2</span> -->
+		</div>
+		<!-- <a onclick="setStyleSheet('css/style.css')" href="#">Style 1</a>
+    	<a onclick="setStyleSheet('css/style2.css')" href="#">Style 2</a> -->
 		
-		<!-- <script type="text/javascript" src="ip.php"></script>
-		<?php ipinfo(); ?> -->
+		<script type="text/javascript" src="ip.php"></script>
+		<!-- <?php ipinfo(); ?> -->
 	</body>
 </html>

@@ -8,9 +8,6 @@
 #menu li:hover ul{display: block;}
 .frame {background: paleturquoise; height: 300px;}
 .head {background: red;}
-body {background: salmon}
+body {background: chartreuse;}
 h1 {position: relative; text-align: center;}
 iframe{}
-.photo:hover::after{content: attr(data-title); position: absolute; left: 0; right: 0; bottom: 5px; z-index: 1; background: rgba(0,42,167,0.6); color: #fff; text-align: center; }
-/* .photo{-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease;}
-.photo:hover{border: 70px solid #000; border-radius: 50%;} */
