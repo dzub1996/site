@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<script type="text/javascript">  
 			setInterval(function () {  
  			date = new Date(),  
@@ -43,7 +44,9 @@
 		<link rel="stylesheet" id=dyncss href="css/style2.css" />
 		<link href="ip.php" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Образовательный центр</title>
+		<title>Образовательный центр</title>	
+
+
 	</head>
 	<body>
 		<script>
@@ -55,6 +58,7 @@
 	<div class="head">
 		<h1> Образовательный центр иностранных языков </h1>
 	</div>
+	
 	
 	<div class="back">
 		<ul id="menu">
@@ -97,6 +101,24 @@
     	<a onclick="setStyleSheet('css/style2.css')" href="#">Style 2</a> -->
 		
 		<script type="text/javascript" src="ip.php"></script>
-		<!-- <?php ipinfo(); ?> -->
+		<!-- <?php ipinfo(); ?>
+		
+		<form enctype="multipart/form-data" method="post">
+   <p><input type="file" name="f">
+   <input type="submit" value="Отправить"></p>
+  </form> -->
+  <h1>Basic File Upload</h1>
+<form method="post" action="basic.php" enctype="multipart/form-data">
+<label for="inputfile">Upload File</label>
+<input type="file" id="inputfile" name="inputfile"></br>
+<input type="submit" value="Click To Upload">
+</form>
+
+<form action="send.php" method="post">
+<input type="text" name="fio" placeholder="Укажите ФИО" required>
+<input type="text" name="email" placeholder="Укажите e-mail" required>
+<input type="submit" value="Отправить">
+</form>
+
 	</body>
 </html>
