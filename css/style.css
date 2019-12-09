@@ -12,5 +12,41 @@ body {background: salmon}
 h1 {position: relative; text-align: center;}
 iframe{}
 .photo:hover::after{content: attr(data-title); position: absolute; left: 0; right: 0; bottom: 5px; z-index: 1; background: rgba(0,42,167,0.6); color: #fff; text-align: center; }
+.newscarusel{
+	padding:10px;
+	width:50%;
+}
+
+.newscarusel hr{
+	background:#E9E9E9;
+	height:1px;
+	border:none;
+	margin:5px 0;
+}
+
+.newscarusel div{
+	padding: 10px;
+}
+
+.newstext{
+	color:#666666;
+	line-height:1em;
+	margin-top: 10px;
+	display:inline-block;
+	font-size:12px;
+}
+
+.newsimg{
+	display:none;
+}
+
+.newsimgpreview{
+	float: right;
+	margin-right:624px;
+	margin-top:10px;
+	background-repeat:no-repeat;
+	width: 290px;
+	height:285px;
+}
 /* .photo{-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease;}
 .photo:hover{border: 70px solid #000; border-radius: 50%;} */
